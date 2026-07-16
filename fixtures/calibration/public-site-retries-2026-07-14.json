@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "createdAt": "2026-07-14",
+    "purpose": "One clean-profile retry for initial public-site collection failures."
+  },
+  "targets": [
+    { "category": "commerce", "url": "https://www.costco.com/" },
+    { "category": "news", "url": "https://www.washingtonpost.com/" },
+    { "category": "finance", "url": "https://www.fidelity.com/" },
+    { "category": "travel", "url": "https://www.hotels.com/" },
+    { "category": "travel", "url": "https://www.united.com/" },
+    { "category": "ordinary-control", "url": "https://httpstat.us/" }
+  ]
+}

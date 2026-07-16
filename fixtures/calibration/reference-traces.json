@@ -1,0 +1,53 @@
+{
+  "config": {
+    "fileSystemGrowthThresholdBytes": 134217728,
+    "totalGrowthThresholdBytes": 536870912,
+    "absoluteFileSystemWarningBytes": 1073741824
+  },
+  "traces": [
+    {
+      "id": "synthetic-frost-construction",
+      "label": "attack-construction",
+      "source": "synthetic-model",
+      "expectedRapid": true,
+      "samples": [
+        { "at": 0, "usageBytes": 0, "fileSystemBytes": 0 },
+        { "at": 5000, "usageBytes": 134217728, "fileSystemBytes": 134217728 },
+        { "at": 10000, "usageBytes": 134217728, "fileSystemBytes": 134217728 }
+      ]
+    },
+    {
+      "id": "synthetic-database-import",
+      "label": "benign-database",
+      "source": "synthetic-model",
+      "expectedRapid": false,
+      "samples": [
+        { "at": 0, "usageBytes": 0, "fileSystemBytes": 0 },
+        { "at": 5000, "usageBytes": 67108864, "fileSystemBytes": 67108864 },
+        { "at": 10000, "usageBytes": 100663296, "fileSystemBytes": 100663296 }
+      ]
+    },
+    {
+      "id": "synthetic-single-estimate-spike",
+      "label": "measurement-noise",
+      "source": "synthetic-model",
+      "expectedRapid": false,
+      "samples": [
+        { "at": 0, "usageBytes": 0, "fileSystemBytes": 0 },
+        { "at": 5000, "usageBytes": 134217728, "fileSystemBytes": 134217728 },
+        { "at": 10000, "usageBytes": 0, "fileSystemBytes": 0 }
+      ]
+    },
+    {
+      "id": "synthetic-total-only-growth",
+      "label": "unattributed-total-storage",
+      "source": "synthetic-model",
+      "expectedRapid": false,
+      "samples": [
+        { "at": 0, "usageBytes": 0, "fileSystemBytes": null },
+        { "at": 5000, "usageBytes": 536870912, "fileSystemBytes": null },
+        { "at": 10000, "usageBytes": 536870912, "fileSystemBytes": null }
+      ]
+    }
+  ]
+}

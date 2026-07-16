@@ -1,0 +1,132 @@
+{
+  "generatedAt": "2026-07-15T03:06:20.622Z",
+  "classifierVersion": 1,
+  "attemptedCount": 13,
+  "successCount": 13,
+  "failureCount": 0,
+  "classifierCandidateCount": 0,
+  "categories": [
+    {
+      "category": "developer-docs",
+      "attempted": 2,
+      "success": 2,
+      "failure": 0
+    },
+    {
+      "category": "finance",
+      "attempted": 2,
+      "success": 2,
+      "failure": 0
+    },
+    {
+      "category": "games",
+      "attempted": 2,
+      "success": 2,
+      "failure": 0
+    },
+    {
+      "category": "maps",
+      "attempted": 3,
+      "success": 3,
+      "failure": 0
+    },
+    {
+      "category": "ordinary-control",
+      "attempted": 1,
+      "success": 1,
+      "failure": 0
+    },
+    {
+      "category": "pwa-offline",
+      "attempted": 2,
+      "success": 2,
+      "failure": 0
+    },
+    {
+      "category": "travel",
+      "attempted": 1,
+      "success": 1,
+      "failure": 0
+    }
+  ],
+  "largestPeakGrowth": [
+    {
+      "id": "pwa-offline-excalidraw-com",
+      "category": "pwa-offline",
+      "source": "https://excalidraw.com/",
+      "peakGrowthBytes": 460548,
+      "endGrowthBytes": 460548
+    },
+    {
+      "id": "ordinary-control-info-cern-ch",
+      "category": "ordinary-control",
+      "source": "https://info.cern.ch/",
+      "peakGrowthBytes": 0,
+      "endGrowthBytes": 0
+    },
+    {
+      "id": "games-www-epicgames-com",
+      "category": "games",
+      "source": "https://www.epicgames.com/",
+      "peakGrowthBytes": 0,
+      "endGrowthBytes": 0
+    },
+    {
+      "id": "maps-earth-google-com",
+      "category": "maps",
+      "source": "https://earth.google.com/",
+      "peakGrowthBytes": 0,
+      "endGrowthBytes": 0
+    },
+    {
+      "id": "pwa-offline-webaim-org",
+      "category": "pwa-offline",
+      "source": "https://webaim.org/",
+      "peakGrowthBytes": 0,
+      "endGrowthBytes": 0
+    },
+    {
+      "id": "travel-www-tripadvisor-com",
+      "category": "travel",
+      "source": "https://www.tripadvisor.com/",
+      "peakGrowthBytes": 0,
+      "endGrowthBytes": 0
+    },
+    {
+      "id": "finance-www-marketwatch-com",
+      "category": "finance",
+      "source": "https://www.marketwatch.com/",
+      "peakGrowthBytes": 0,
+      "endGrowthBytes": 0
+    },
+    {
+      "id": "developer-docs-developer-mozilla-org",
+      "category": "developer-docs",
+      "source": "https://developer.mozilla.org/",
+      "peakGrowthBytes": 0,
+      "endGrowthBytes": 0
+    },
+    {
+      "id": "maps-www-bing-com",
+      "category": "maps",
+      "source": "https://www.bing.com/maps",
+      "peakGrowthBytes": 0,
+      "endGrowthBytes": 0
+    },
+    {
+      "id": "maps-maps-apple-com",
+      "category": "maps",
+      "source": "https://maps.apple.com/",
+      "peakGrowthBytes": 0,
+      "endGrowthBytes": 0
+    }
+  ],
+  "classifierCandidates": [],
+  "failures": [],
+  "caveats": [
+    "Observed storage growth does not establish malicious intent, abuse, tracking, persistence, resource exhaustion, or use of FROST.",
+    "Measurements are approximate and origin-scoped; they do not identify which party or script caused a change.",
+    "A negative result covers only one passive visit under the recorded conditions.",
+    "This preselected cohort cannot establish classifier accuracy or false-positive rates for the public web."
+  ]
+}

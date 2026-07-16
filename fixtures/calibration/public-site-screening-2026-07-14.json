@@ -1,0 +1,4352 @@
+{
+  "metadata": {
+    "browser": "C:\\Users\\Me\\AppData\\Local\\ms-playwright\\chromium-1228\\chrome-win64\\chrome.exe",
+    "collectedAt": "2026-07-15T02:56:46.670Z",
+    "status": "complete",
+    "targetPath": "D:\\Apps\\Extensions\\Browser\\frostguard\\fixtures\\calibration\\public-sites-2026-07-14.json",
+    "targetCount": 130,
+    "attemptedCount": 130,
+    "protocol": {
+      "interaction": "passive-page-load",
+      "sampleCount": 4,
+      "sampleIntervalMs": 5000,
+      "isolation": "clean-profile-with-per-origin-clear"
+    }
+  },
+  "config": {
+    "fileSystemGrowthThresholdBytes": 134217728,
+    "totalGrowthThresholdBytes": 536870912,
+    "absoluteFileSystemWarningBytes": 1073741824
+  },
+  "traces": [
+    {
+      "id": "chromium-empty-control",
+      "label": "benign-control",
+      "source": "chromium-local-opfs",
+      "expectedRapid": false,
+      "scenarioResult": {
+        "status": "done",
+        "fileSize": 0,
+        "estimatedQuota": 10737418416
+      },
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        },
+        {
+          "at": 1507,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        },
+        {
+          "at": 3017,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        },
+        {
+          "at": 4527,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        },
+        {
+          "at": 6033,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        },
+        {
+          "at": 7540,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        },
+        {
+          "at": 9050,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        },
+        {
+          "at": 10561,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        }
+      ]
+    },
+    {
+      "id": "chromium-database-model",
+      "label": "benign-database",
+      "source": "chromium-local-opfs",
+      "expectedRapid": false,
+      "scenarioResult": {
+        "status": "done",
+        "fileSize": 100663296,
+        "estimatedQuota": 10838081712
+      },
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 8388974,
+          "fileSystemBytes": 8388974
+        },
+        {
+          "at": 1504,
+          "usageBytes": 33554798,
+          "fileSystemBytes": 33554798
+        },
+        {
+          "at": 3014,
+          "usageBytes": 58720622,
+          "fileSystemBytes": 58720622
+        },
+        {
+          "at": 4529,
+          "usageBytes": 79692142,
+          "fileSystemBytes": 79692142
+        },
+        {
+          "at": 6041,
+          "usageBytes": 100663472,
+          "fileSystemBytes": 100663472
+        },
+        {
+          "at": 7553,
+          "usageBytes": 100663472,
+          "fileSystemBytes": 100663472
+        },
+        {
+          "at": 9065,
+          "usageBytes": 100663472,
+          "fileSystemBytes": 100663472
+        },
+        {
+          "at": 10575,
+          "usageBytes": 100663472,
+          "fileSystemBytes": 100663472
+        }
+      ]
+    },
+    {
+      "id": "chromium-frost-construction",
+      "label": "attack-construction",
+      "source": "chromium-local-opfs",
+      "expectedRapid": true,
+      "scenarioResult": {
+        "status": "done",
+        "fileSize": 268435456,
+        "estimatedQuota": 11005853872
+      },
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        },
+        {
+          "at": 1511,
+          "usageBytes": 268435632,
+          "fileSystemBytes": 268435632
+        },
+        {
+          "at": 3023,
+          "usageBytes": 268435632,
+          "fileSystemBytes": 268435632
+        },
+        {
+          "at": 4532,
+          "usageBytes": 268435632,
+          "fileSystemBytes": 268435632
+        },
+        {
+          "at": 6039,
+          "usageBytes": 268435632,
+          "fileSystemBytes": 268435632
+        },
+        {
+          "at": 7542,
+          "usageBytes": 268435632,
+          "fileSystemBytes": 268435632
+        },
+        {
+          "at": 9046,
+          "usageBytes": 268435632,
+          "fileSystemBytes": 268435632
+        },
+        {
+          "at": 10556,
+          "usageBytes": 268435632,
+          "fileSystemBytes": 268435632
+        }
+      ]
+    },
+    {
+      "id": "office-ide-docs-google-com",
+      "label": "public-site-screening",
+      "category": "office-ide",
+      "source": "https://docs.google.com/",
+      "requestedUrl": "https://docs.google.com/",
+      "finalUrl": "https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdocs.google.com%2F&dsh=S1108294788%3A1784081721916806&emr=1&followup=https%3A%2F%2Fdocs.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=Ac50bxvOyI-lB6JbAhYpORAENKTFukMtLMV9CXgnsPHshmf6G_1EORJy5VgXfQIzaIOQgvSVtsuaYA",
+      "status": "ok",
+      "durationMs": 18417,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5012,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10021,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15034,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "office-ide-drive-google-com",
+      "label": "public-site-screening",
+      "category": "office-ide",
+      "source": "https://drive.google.com/",
+      "requestedUrl": "https://drive.google.com/",
+      "finalUrl": "https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdrive.google.com%2F&dsh=S923796837%3A1784081740328654&emr=1&followup=https%3A%2F%2Fdrive.google.com%2F&osid=1&passive=1209600&service=wise&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=Ac50bxvZoffLrKOp9P-hHs2D4SwItUxeOLoM-W6C0rWcYw_YFStrNni6LItj8xJ6MKk26pKXYxZwZQ",
+      "status": "ok",
+      "durationMs": 18395,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5007,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10023,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15030,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "office-ide-office-com",
+      "label": "public-site-screening",
+      "category": "office-ide",
+      "source": "https://office.com/",
+      "requestedUrl": "https://office.com/",
+      "finalUrl": "https://www.office.com/",
+      "status": "ok",
+      "durationMs": 18387,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5013,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10028,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15037,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "office-ide-onedrive-live-com",
+      "label": "public-site-screening",
+      "category": "office-ide",
+      "source": "https://onedrive.live.com/",
+      "requestedUrl": "https://onedrive.live.com/",
+      "finalUrl": "https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage",
+      "status": "ok",
+      "durationMs": 22850,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 383,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5387,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10399,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15410,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "office-ide-notion-so",
+      "label": "public-site-screening",
+      "category": "office-ide",
+      "source": "https://notion.so/",
+      "requestedUrl": "https://notion.so/",
+      "finalUrl": "https://www.notion.com/",
+      "status": "ok",
+      "durationMs": 18846,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5019,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10035,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15049,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "office-ide-www-dropbox-com",
+      "label": "public-site-screening",
+      "category": "office-ide",
+      "source": "https://www.dropbox.com/",
+      "requestedUrl": "https://www.dropbox.com/",
+      "finalUrl": "https://www.dropbox.com/",
+      "status": "ok",
+      "durationMs": 18405,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 159744,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5011,
+          "usageBytes": 184320,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10021,
+          "usageBytes": 192512,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15027,
+          "usageBytes": 192512,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "office-ide-www-canva-com",
+      "label": "public-site-screening",
+      "category": "office-ide",
+      "source": "https://www.canva.com/",
+      "requestedUrl": "https://www.canva.com/",
+      "finalUrl": "https://www.canva.com/",
+      "status": "ok",
+      "durationMs": 18339,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5015,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10029,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15038,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "office-ide-miro-com",
+      "label": "public-site-screening",
+      "category": "office-ide",
+      "source": "https://miro.com/",
+      "requestedUrl": "https://miro.com/",
+      "finalUrl": "https://miro.com/",
+      "status": "ok",
+      "durationMs": 18733,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 25,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5077,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10093,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15121,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "office-ide-codepen-io",
+      "label": "public-site-screening",
+      "category": "office-ide",
+      "source": "https://codepen.io/",
+      "requestedUrl": "https://codepen.io/",
+      "finalUrl": "https://codepen.io/",
+      "status": "ok",
+      "durationMs": 18321,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5004,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10016,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15045,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "office-ide-replit-com",
+      "label": "public-site-screening",
+      "category": "office-ide",
+      "source": "https://replit.com/",
+      "requestedUrl": "https://replit.com/",
+      "finalUrl": "https://replit.com/",
+      "status": "ok",
+      "durationMs": 18149,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5013,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10016,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15027,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "maps-maps-google-com",
+      "label": "public-site-screening",
+      "category": "maps",
+      "source": "https://maps.google.com/",
+      "requestedUrl": "https://maps.google.com/",
+      "finalUrl": "https://www.google.com/maps",
+      "status": "ok",
+      "durationMs": 18383,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 3,
+          "usageBytes": 6273,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5010,
+          "usageBytes": 6273,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10012,
+          "usageBytes": 6273,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15016,
+          "usageBytes": 6273,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "maps-www-openstreetmap-org",
+      "label": "public-site-screening",
+      "category": "maps",
+      "source": "https://www.openstreetmap.org/",
+      "requestedUrl": "https://www.openstreetmap.org/",
+      "finalUrl": "https://www.openstreetmap.org/#map=4/38.01/-95.84",
+      "status": "ok",
+      "durationMs": 18664,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5018,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10024,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15039,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "maps-www-bing-com",
+      "label": "public-site-screening",
+      "category": "maps",
+      "source": "https://www.bing.com/maps",
+      "requestedUrl": "https://www.bing.com/maps",
+      "finalUrl": "https://www.bing.com/maps/sharing?webglerror=a",
+      "status": "ok",
+      "durationMs": 18182,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5012,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10014,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15024,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "maps-maps-apple-com",
+      "label": "public-site-screening",
+      "category": "maps",
+      "source": "https://maps.apple.com/",
+      "requestedUrl": "https://maps.apple.com/",
+      "finalUrl": "https://maps.apple.com/",
+      "status": "ok",
+      "durationMs": 18268,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5007,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10022,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15037,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "maps-wego-here-com",
+      "label": "public-site-screening",
+      "category": "maps",
+      "source": "https://wego.here.com/",
+      "requestedUrl": "https://wego.here.com/",
+      "finalUrl": "https://wego.here.com/",
+      "status": "ok",
+      "durationMs": 18192,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5007,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10021,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15025,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "maps-www-mapquest-com",
+      "label": "public-site-screening",
+      "category": "maps",
+      "source": "https://www.mapquest.com/",
+      "requestedUrl": "https://www.mapquest.com/",
+      "finalUrl": "https://www.mapquest.com/",
+      "status": "ok",
+      "durationMs": 18137,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5012,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10017,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15026,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "maps-www-waze-com",
+      "label": "public-site-screening",
+      "category": "maps",
+      "source": "https://www.waze.com/",
+      "requestedUrl": "https://www.waze.com/",
+      "finalUrl": "https://www.waze.com/",
+      "status": "ok",
+      "durationMs": 18355,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5012,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10020,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15026,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "maps-www-mapbox-com",
+      "label": "public-site-screening",
+      "category": "maps",
+      "source": "https://www.mapbox.com/",
+      "requestedUrl": "https://www.mapbox.com/",
+      "finalUrl": "https://www.mapbox.com/",
+      "status": "ok",
+      "durationMs": 18818,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 63,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5086,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10108,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15111,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "maps-earth-google-com",
+      "label": "public-site-screening",
+      "category": "maps",
+      "source": "https://earth.google.com/",
+      "requestedUrl": "https://earth.google.com/",
+      "finalUrl": "https://earth.google.com/web/",
+      "status": "ok",
+      "durationMs": 18433,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 1142784,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5014,
+          "usageBytes": 1142784,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10029,
+          "usageBytes": 1142784,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15033,
+          "usageBytes": 1142784,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "maps-www-arcgis-com",
+      "label": "public-site-screening",
+      "category": "maps",
+      "source": "https://www.arcgis.com/",
+      "requestedUrl": "https://www.arcgis.com/",
+      "finalUrl": "https://www.arcgis.com/index.html",
+      "status": "ok",
+      "durationMs": 18239,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5009,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10023,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15032,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "media-www-youtube-com",
+      "label": "public-site-screening",
+      "category": "media",
+      "source": "https://www.youtube.com/",
+      "requestedUrl": "https://www.youtube.com/",
+      "finalUrl": "https://www.youtube.com/",
+      "status": "ok",
+      "durationMs": 18376,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 1045006,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5018,
+          "usageBytes": 1045006,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10024,
+          "usageBytes": 1045006,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15027,
+          "usageBytes": 1045006,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "media-vimeo-com",
+      "label": "public-site-screening",
+      "category": "media",
+      "source": "https://vimeo.com/",
+      "requestedUrl": "https://vimeo.com/",
+      "finalUrl": "https://vimeo.com/",
+      "status": "ok",
+      "durationMs": 18179,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5003,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10019,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15031,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "media-www-twitch-tv",
+      "label": "public-site-screening",
+      "category": "media",
+      "source": "https://www.twitch.tv/",
+      "requestedUrl": "https://www.twitch.tv/",
+      "finalUrl": "https://www.twitch.tv/",
+      "status": "ok",
+      "durationMs": 18382,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 52,
+          "usageBytes": 80731,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5070,
+          "usageBytes": 80731,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10074,
+          "usageBytes": 80731,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15079,
+          "usageBytes": 80731,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "media-soundcloud-com",
+      "label": "public-site-screening",
+      "category": "media",
+      "source": "https://soundcloud.com/",
+      "requestedUrl": "https://soundcloud.com/",
+      "finalUrl": "https://soundcloud.com/",
+      "status": "ok",
+      "durationMs": 18314,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 443504,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5016,
+          "usageBytes": 443504,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10030,
+          "usageBytes": 443504,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15043,
+          "usageBytes": 443504,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "media-open-spotify-com",
+      "label": "public-site-screening",
+      "category": "media",
+      "source": "https://open.spotify.com/",
+      "requestedUrl": "https://open.spotify.com/",
+      "finalUrl": "https://open.spotify.com/",
+      "status": "ok",
+      "durationMs": 18252,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 1513472,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5017,
+          "usageBytes": 43083157,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10020,
+          "usageBytes": 43083157,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15031,
+          "usageBytes": 43083157,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "media-music-youtube-com",
+      "label": "public-site-screening",
+      "category": "media",
+      "source": "https://music.youtube.com/",
+      "requestedUrl": "https://music.youtube.com/",
+      "finalUrl": "https://music.youtube.com/",
+      "status": "ok",
+      "durationMs": 18340,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5015,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10017,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15026,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "media-www-deezer-com",
+      "label": "public-site-screening",
+      "category": "media",
+      "source": "https://www.deezer.com/",
+      "requestedUrl": "https://www.deezer.com/",
+      "finalUrl": "https://www.deezer.com/us/",
+      "status": "ok",
+      "durationMs": 18478,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5011,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10028,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15037,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "media-www-dailymotion-com",
+      "label": "public-site-screening",
+      "category": "media",
+      "source": "https://www.dailymotion.com/",
+      "requestedUrl": "https://www.dailymotion.com/",
+      "finalUrl": "https://www.dailymotion.com/",
+      "status": "ok",
+      "durationMs": 18259,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5011,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10012,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15024,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "media-archive-org",
+      "label": "public-site-screening",
+      "category": "media",
+      "source": "https://archive.org/",
+      "requestedUrl": "https://archive.org/",
+      "finalUrl": "https://archive.org/",
+      "status": "ok",
+      "durationMs": 18382,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5013,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10020,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15026,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "media-www-nationalgeographic-com",
+      "label": "public-site-screening",
+      "category": "media",
+      "source": "https://www.nationalgeographic.com/",
+      "requestedUrl": "https://www.nationalgeographic.com/",
+      "finalUrl": "https://www.nationalgeographic.com/",
+      "status": "ok",
+      "durationMs": 18543,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 27,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5039,
+          "usageBytes": 147456,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10045,
+          "usageBytes": 147456,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15058,
+          "usageBytes": 147456,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "social-www-facebook-com",
+      "label": "public-site-screening",
+      "category": "social",
+      "source": "https://www.facebook.com/",
+      "requestedUrl": "https://www.facebook.com/",
+      "finalUrl": "https://www.facebook.com/",
+      "status": "ok",
+      "durationMs": 18301,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5016,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10026,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15035,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "social-www-instagram-com",
+      "label": "public-site-screening",
+      "category": "social",
+      "source": "https://www.instagram.com/",
+      "requestedUrl": "https://www.instagram.com/",
+      "finalUrl": "https://www.instagram.com/",
+      "status": "ok",
+      "durationMs": 18289,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5018,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10029,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15040,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "social-www-linkedin-com",
+      "label": "public-site-screening",
+      "category": "social",
+      "source": "https://www.linkedin.com/",
+      "requestedUrl": "https://www.linkedin.com/",
+      "finalUrl": "https://www.linkedin.com/",
+      "status": "ok",
+      "durationMs": 18422,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5011,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10025,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15028,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "social-www-reddit-com",
+      "label": "public-site-screening",
+      "category": "social",
+      "source": "https://www.reddit.com/",
+      "requestedUrl": "https://www.reddit.com/",
+      "finalUrl": "https://www.reddit.com/?rdt=49868",
+      "status": "ok",
+      "durationMs": 18147,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5009,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10023,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15032,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "social-www-tiktok-com",
+      "label": "public-site-screening",
+      "category": "social",
+      "source": "https://www.tiktok.com/",
+      "requestedUrl": "https://www.tiktok.com/",
+      "finalUrl": "https://www.tiktok.com/",
+      "status": "ok",
+      "durationMs": 18489,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 319753,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5008,
+          "usageBytes": 491785,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10086,
+          "usageBytes": 491785,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15096,
+          "usageBytes": 491785,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "social-www-pinterest-com",
+      "label": "public-site-screening",
+      "category": "social",
+      "source": "https://www.pinterest.com/",
+      "requestedUrl": "https://www.pinterest.com/",
+      "finalUrl": "https://www.pinterest.com/",
+      "status": "ok",
+      "durationMs": 18322,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 155648,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5018,
+          "usageBytes": 155648,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10033,
+          "usageBytes": 147456,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15040,
+          "usageBytes": 147456,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "social-mastodon-social",
+      "label": "public-site-screening",
+      "category": "social",
+      "source": "https://mastodon.social/",
+      "requestedUrl": "https://mastodon.social/",
+      "finalUrl": "https://mastodon.social/explore",
+      "status": "ok",
+      "durationMs": 18414,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 3,
+          "usageBytes": 2453504,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5010,
+          "usageBytes": 2453504,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10025,
+          "usageBytes": 2453504,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15040,
+          "usageBytes": 2453504,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "social-bsky-app",
+      "label": "public-site-screening",
+      "category": "social",
+      "source": "https://bsky.app/",
+      "requestedUrl": "https://bsky.app/",
+      "finalUrl": "https://bsky.app/",
+      "status": "ok",
+      "durationMs": 18286,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 151552,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5019,
+          "usageBytes": 151552,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10033,
+          "usageBytes": 151552,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15046,
+          "usageBytes": 151552,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "social-www-threads-net",
+      "label": "public-site-screening",
+      "category": "social",
+      "source": "https://www.threads.net/",
+      "requestedUrl": "https://www.threads.net/",
+      "finalUrl": "https://www.threads.com/",
+      "status": "ok",
+      "durationMs": 18501,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 3,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5017,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10027,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15033,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "social-www-quora-com",
+      "label": "public-site-screening",
+      "category": "social",
+      "source": "https://www.quora.com/",
+      "requestedUrl": "https://www.quora.com/",
+      "finalUrl": "https://www.quora.com/",
+      "status": "ok",
+      "durationMs": 18183,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5014,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10023,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15029,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "commerce-www-amazon-com",
+      "label": "public-site-screening",
+      "category": "commerce",
+      "source": "https://www.amazon.com/",
+      "requestedUrl": "https://www.amazon.com/",
+      "finalUrl": "https://www.amazon.com/",
+      "status": "ok",
+      "durationMs": 18396,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 625513,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5004,
+          "usageBytes": 625513,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10014,
+          "usageBytes": 625513,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15028,
+          "usageBytes": 625513,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "commerce-www-ebay-com",
+      "label": "public-site-screening",
+      "category": "commerce",
+      "source": "https://www.ebay.com/",
+      "requestedUrl": "https://www.ebay.com/",
+      "finalUrl": "https://www.ebay.com/",
+      "status": "ok",
+      "durationMs": 18930,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5007,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10009,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15014,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "commerce-www-walmart-com",
+      "label": "public-site-screening",
+      "category": "commerce",
+      "source": "https://www.walmart.com/",
+      "requestedUrl": "https://www.walmart.com/",
+      "finalUrl": "https://www.walmart.com/",
+      "status": "ok",
+      "durationMs": 18559,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 206,
+          "usageBytes": 34458,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5217,
+          "usageBytes": 34458,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10234,
+          "usageBytes": 34458,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15238,
+          "usageBytes": 34458,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "commerce-www-target-com",
+      "label": "public-site-screening",
+      "category": "commerce",
+      "source": "https://www.target.com/",
+      "requestedUrl": "https://www.target.com/",
+      "finalUrl": "https://www.target.com/",
+      "status": "ok",
+      "durationMs": 18726,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 144,
+          "usageBytes": 147728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5151,
+          "usageBytes": 147728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10153,
+          "usageBytes": 147728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15158,
+          "usageBytes": 147728,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "commerce-www-etsy-com",
+      "label": "public-site-screening",
+      "category": "commerce",
+      "source": "https://www.etsy.com/",
+      "requestedUrl": "https://www.etsy.com/",
+      "finalUrl": "https://www.etsy.com/",
+      "status": "ok",
+      "durationMs": 18296,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5011,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10020,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15036,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "commerce-www-bestbuy-com",
+      "label": "public-site-screening",
+      "category": "commerce",
+      "source": "https://www.bestbuy.com/",
+      "requestedUrl": "https://www.bestbuy.com/",
+      "finalUrl": "https://www.bestbuy.com/",
+      "status": "ok",
+      "durationMs": 27589,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 12,
+          "usageBytes": 221184,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5016,
+          "usageBytes": 322377,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10019,
+          "usageBytes": 322377,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15031,
+          "usageBytes": 322377,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "commerce-www-shopify-com",
+      "label": "public-site-screening",
+      "category": "commerce",
+      "source": "https://www.shopify.com/",
+      "requestedUrl": "https://www.shopify.com/",
+      "finalUrl": "https://www.shopify.com/",
+      "status": "ok",
+      "durationMs": 18154,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5004,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10006,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15017,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "commerce-www-homedepot-com",
+      "label": "public-site-screening",
+      "category": "commerce",
+      "source": "https://www.homedepot.com/",
+      "requestedUrl": "https://www.homedepot.com/",
+      "finalUrl": "https://www.homedepot.com/",
+      "status": "ok",
+      "durationMs": 18464,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 126,
+          "usageBytes": 462848,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5138,
+          "usageBytes": 684032,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10142,
+          "usageBytes": 684032,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15156,
+          "usageBytes": 684032,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "commerce-www-costco-com",
+      "label": "collection-failure",
+      "category": "commerce",
+      "source": "https://www.costco.com/",
+      "requestedUrl": "https://www.costco.com/",
+      "finalUrl": null,
+      "status": "error",
+      "durationMs": 128,
+      "expectedRapid": null,
+      "samples": [],
+      "error": "net::ERR_HTTP2_PROTOCOL_ERROR"
+    },
+    {
+      "id": "commerce-www-nike-com",
+      "label": "public-site-screening",
+      "category": "commerce",
+      "source": "https://www.nike.com/",
+      "requestedUrl": "https://www.nike.com/",
+      "finalUrl": "https://www.nike.com/",
+      "status": "ok",
+      "durationMs": 21167,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 564,
+          "usageBytes": 73879,
+          "fileSystemBytes": 151
+        },
+        {
+          "at": 5571,
+          "usageBytes": 147607,
+          "fileSystemBytes": 151
+        },
+        {
+          "at": 10574,
+          "usageBytes": 147607,
+          "fileSystemBytes": 151
+        },
+        {
+          "at": 15578,
+          "usageBytes": 147607,
+          "fileSystemBytes": 151
+        }
+      ]
+    },
+    {
+      "id": "news-www-bbc-com",
+      "label": "public-site-screening",
+      "category": "news",
+      "source": "https://www.bbc.com/",
+      "requestedUrl": "https://www.bbc.com/",
+      "finalUrl": "https://www.bbc.com/",
+      "status": "ok",
+      "durationMs": 18219,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5011,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10013,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15018,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "news-www-cnn-com",
+      "label": "public-site-screening",
+      "category": "news",
+      "source": "https://www.cnn.com/",
+      "requestedUrl": "https://www.cnn.com/",
+      "finalUrl": "https://www.cnn.com/",
+      "status": "ok",
+      "durationMs": 18143,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5006,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10017,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15031,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "news-www-nytimes-com",
+      "label": "public-site-screening",
+      "category": "news",
+      "source": "https://www.nytimes.com/",
+      "requestedUrl": "https://www.nytimes.com/",
+      "finalUrl": "https://www.nytimes.com/",
+      "status": "ok",
+      "durationMs": 19558,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1006,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 6015,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 11024,
+          "usageBytes": 2290176,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 16034,
+          "usageBytes": 9287424,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "news-www-theguardian-com",
+      "label": "public-site-screening",
+      "category": "news",
+      "source": "https://www.theguardian.com/",
+      "requestedUrl": "https://www.theguardian.com/",
+      "finalUrl": "https://www.theguardian.com/us",
+      "status": "ok",
+      "durationMs": 18167,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 212992,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5006,
+          "usageBytes": 458752,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10009,
+          "usageBytes": 458752,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15018,
+          "usageBytes": 458752,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "news-www-washingtonpost-com",
+      "label": "collection-failure",
+      "category": "news",
+      "source": "https://www.washingtonpost.com/",
+      "requestedUrl": "https://www.washingtonpost.com/",
+      "finalUrl": null,
+      "status": "error",
+      "durationMs": 166,
+      "expectedRapid": null,
+      "samples": [],
+      "error": "net::ERR_HTTP2_PROTOCOL_ERROR"
+    },
+    {
+      "id": "news-www-reuters-com",
+      "label": "public-site-screening",
+      "category": "news",
+      "source": "https://www.reuters.com/",
+      "requestedUrl": "https://www.reuters.com/",
+      "finalUrl": "https://www.reuters.com/",
+      "status": "ok",
+      "durationMs": 18195,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5019,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10024,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15028,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "news-apnews-com",
+      "label": "public-site-screening",
+      "category": "news",
+      "source": "https://apnews.com/",
+      "requestedUrl": "https://apnews.com/",
+      "finalUrl": "https://apnews.com/",
+      "status": "ok",
+      "durationMs": 18201,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 221184,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5016,
+          "usageBytes": 315392,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10026,
+          "usageBytes": 315392,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15031,
+          "usageBytes": 315392,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "news-www-npr-org",
+      "label": "public-site-screening",
+      "category": "news",
+      "source": "https://www.npr.org/",
+      "requestedUrl": "https://www.npr.org/",
+      "finalUrl": "https://www.npr.org/",
+      "status": "ok",
+      "durationMs": 21182,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5017,
+          "usageBytes": 331776,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10028,
+          "usageBytes": 331776,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15034,
+          "usageBytes": 331776,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "news-www-aljazeera-com",
+      "label": "public-site-screening",
+      "category": "news",
+      "source": "https://www.aljazeera.com/",
+      "requestedUrl": "https://www.aljazeera.com/",
+      "finalUrl": "https://www.aljazeera.com/",
+      "status": "ok",
+      "durationMs": 18186,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 3,
+          "usageBytes": 147456,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5019,
+          "usageBytes": 147456,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10025,
+          "usageBytes": 147456,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15042,
+          "usageBytes": 147456,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "news-time-com",
+      "label": "public-site-screening",
+      "category": "news",
+      "source": "https://time.com/",
+      "requestedUrl": "https://time.com/",
+      "finalUrl": "https://time.com/",
+      "status": "ok",
+      "durationMs": 19480,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5006,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10013,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15030,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "education-www-khanacademy-org",
+      "label": "public-site-screening",
+      "category": "education",
+      "source": "https://www.khanacademy.org/",
+      "requestedUrl": "https://www.khanacademy.org/",
+      "finalUrl": "https://www.khanacademy.org/",
+      "status": "ok",
+      "durationMs": 19441,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5009,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10016,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15027,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "education-www-coursera-org",
+      "label": "public-site-screening",
+      "category": "education",
+      "source": "https://www.coursera.org/",
+      "requestedUrl": "https://www.coursera.org/",
+      "finalUrl": "https://www.coursera.org/",
+      "status": "ok",
+      "durationMs": 18390,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5007,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10015,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15023,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "education-www-edx-org",
+      "label": "public-site-screening",
+      "category": "education",
+      "source": "https://www.edx.org/",
+      "requestedUrl": "https://www.edx.org/",
+      "finalUrl": "https://www.edx.org/",
+      "status": "ok",
+      "durationMs": 24258,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 3632,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 8635,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 13644,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 18649,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "education-www-udemy-com",
+      "label": "public-site-screening",
+      "category": "education",
+      "source": "https://www.udemy.com/",
+      "requestedUrl": "https://www.udemy.com/",
+      "finalUrl": "https://www.udemy.com/",
+      "status": "ok",
+      "durationMs": 18227,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5005,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10015,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15019,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "education-www-duolingo-com",
+      "label": "public-site-screening",
+      "category": "education",
+      "source": "https://www.duolingo.com/",
+      "requestedUrl": "https://www.duolingo.com/",
+      "finalUrl": "https://www.duolingo.com/",
+      "status": "ok",
+      "durationMs": 18283,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 4,
+          "usageBytes": 6738,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5012,
+          "usageBytes": 6738,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10016,
+          "usageBytes": 6738,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15027,
+          "usageBytes": 6738,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "education-quizlet-com",
+      "label": "public-site-screening",
+      "category": "education",
+      "source": "https://quizlet.com/",
+      "requestedUrl": "https://quizlet.com/",
+      "finalUrl": "https://quizlet.com/",
+      "status": "ok",
+      "durationMs": 18239,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 3,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5015,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10028,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15042,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "education-www-wikipedia-org",
+      "label": "public-site-screening",
+      "category": "education",
+      "source": "https://www.wikipedia.org/",
+      "requestedUrl": "https://www.wikipedia.org/",
+      "finalUrl": "https://www.wikipedia.org/",
+      "status": "ok",
+      "durationMs": 18249,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 3,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5010,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10015,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15020,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "education-www-britannica-com",
+      "label": "public-site-screening",
+      "category": "education",
+      "source": "https://www.britannica.com/",
+      "requestedUrl": "https://www.britannica.com/",
+      "finalUrl": "https://www.britannica.com/",
+      "status": "ok",
+      "durationMs": 18203,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5018,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10032,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15053,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "education-ocw-mit-edu",
+      "label": "public-site-screening",
+      "category": "education",
+      "source": "https://ocw.mit.edu/",
+      "requestedUrl": "https://ocw.mit.edu/",
+      "finalUrl": "https://ocw.mit.edu/",
+      "status": "ok",
+      "durationMs": 18202,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5019,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10032,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15048,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "education-www-futurelearn-com",
+      "label": "public-site-screening",
+      "category": "education",
+      "source": "https://www.futurelearn.com/",
+      "requestedUrl": "https://www.futurelearn.com/",
+      "finalUrl": "https://www.futurelearn.com/",
+      "status": "ok",
+      "durationMs": 18222,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5006,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10015,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15031,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "finance-finance-yahoo-com",
+      "label": "public-site-screening",
+      "category": "finance",
+      "source": "https://finance.yahoo.com/",
+      "requestedUrl": "https://finance.yahoo.com/",
+      "finalUrl": "https://finance.yahoo.com/",
+      "status": "ok",
+      "durationMs": 19427,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 61,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5072,
+          "usageBytes": 72609,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10077,
+          "usageBytes": 72609,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15082,
+          "usageBytes": 72609,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "finance-www-google-com",
+      "label": "public-site-screening",
+      "category": "finance",
+      "source": "https://www.google.com/finance/",
+      "requestedUrl": "https://www.google.com/finance/",
+      "finalUrl": "https://www.google.com/finance/beta",
+      "status": "ok",
+      "durationMs": 18504,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 4,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5012,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10024,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15039,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "finance-www-marketwatch-com",
+      "label": "public-site-screening",
+      "category": "finance",
+      "source": "https://www.marketwatch.com/",
+      "requestedUrl": "https://www.marketwatch.com/",
+      "finalUrl": "https://www.marketwatch.com/",
+      "status": "ok",
+      "durationMs": 18193,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5014,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10030,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15032,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "finance-www-investing-com",
+      "label": "public-site-screening",
+      "category": "finance",
+      "source": "https://www.investing.com/",
+      "requestedUrl": "https://www.investing.com/",
+      "finalUrl": "https://www.investing.com/",
+      "status": "ok",
+      "durationMs": 18368,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5013,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10029,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15044,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "finance-www-morningstar-com",
+      "label": "public-site-screening",
+      "category": "finance",
+      "source": "https://www.morningstar.com/",
+      "requestedUrl": "https://www.morningstar.com/",
+      "finalUrl": "https://www.morningstar.com/",
+      "status": "ok",
+      "durationMs": 18161,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5004,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10013,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15016,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "finance-www-fidelity-com",
+      "label": "collection-failure",
+      "category": "finance",
+      "source": "https://www.fidelity.com/",
+      "requestedUrl": "https://www.fidelity.com/",
+      "finalUrl": null,
+      "status": "error",
+      "durationMs": 146,
+      "expectedRapid": null,
+      "samples": [],
+      "error": "net::ERR_HTTP2_PROTOCOL_ERROR"
+    },
+    {
+      "id": "finance-investor-gov",
+      "label": "public-site-screening",
+      "category": "finance",
+      "source": "https://investor.gov/",
+      "requestedUrl": "https://investor.gov/",
+      "finalUrl": "https://investor.gov/",
+      "status": "ok",
+      "durationMs": 18193,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5002,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10009,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15020,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "finance-www-sec-gov",
+      "label": "public-site-screening",
+      "category": "finance",
+      "source": "https://www.sec.gov/",
+      "requestedUrl": "https://www.sec.gov/",
+      "finalUrl": "https://www.sec.gov/",
+      "status": "ok",
+      "durationMs": 18171,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5013,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10022,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15027,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "finance-www-nerdwallet-com",
+      "label": "public-site-screening",
+      "category": "finance",
+      "source": "https://www.nerdwallet.com/",
+      "requestedUrl": "https://www.nerdwallet.com/",
+      "finalUrl": "https://www.nerdwallet.com/",
+      "status": "ok",
+      "durationMs": 18249,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5005,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10019,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15031,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "finance-www-bankrate-com",
+      "label": "public-site-screening",
+      "category": "finance",
+      "source": "https://www.bankrate.com/",
+      "requestedUrl": "https://www.bankrate.com/",
+      "finalUrl": "https://www.bankrate.com/",
+      "status": "ok",
+      "durationMs": 18216,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5009,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10020,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15028,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "travel-www-booking-com",
+      "label": "public-site-screening",
+      "category": "travel",
+      "source": "https://www.booking.com/",
+      "requestedUrl": "https://www.booking.com/",
+      "finalUrl": "https://www.booking.com/",
+      "status": "ok",
+      "durationMs": 18394,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 38,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5050,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10055,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15069,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "travel-www-airbnb-com",
+      "label": "public-site-screening",
+      "category": "travel",
+      "source": "https://www.airbnb.com/",
+      "requestedUrl": "https://www.airbnb.com/",
+      "finalUrl": "https://www.airbnb.com/",
+      "status": "ok",
+      "durationMs": 18266,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 7661,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5006,
+          "usageBytes": 7661,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10009,
+          "usageBytes": 408716,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15024,
+          "usageBytes": 408716,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "travel-www-expedia-com",
+      "label": "public-site-screening",
+      "category": "travel",
+      "source": "https://www.expedia.com/",
+      "requestedUrl": "https://www.expedia.com/",
+      "finalUrl": "https://www.expedia.com/",
+      "status": "ok",
+      "durationMs": 18262,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5003,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10019,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15027,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "travel-www-tripadvisor-com",
+      "label": "public-site-screening",
+      "category": "travel",
+      "source": "https://www.tripadvisor.com/",
+      "requestedUrl": "https://www.tripadvisor.com/",
+      "finalUrl": "https://www.tripadvisor.com/",
+      "status": "ok",
+      "durationMs": 18177,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5006,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10015,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15019,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "travel-www-kayak-com",
+      "label": "public-site-screening",
+      "category": "travel",
+      "source": "https://www.kayak.com/",
+      "requestedUrl": "https://www.kayak.com/",
+      "finalUrl": "https://www.kayak.com/",
+      "status": "ok",
+      "durationMs": 18388,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 4,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5011,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10016,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15023,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "travel-www-hotels-com",
+      "label": "collection-failure",
+      "category": "travel",
+      "source": "https://www.hotels.com/",
+      "requestedUrl": "https://www.hotels.com/",
+      "finalUrl": null,
+      "status": "error",
+      "durationMs": 147,
+      "expectedRapid": null,
+      "samples": [],
+      "error": "net::ERR_HTTP2_PROTOCOL_ERROR"
+    },
+    {
+      "id": "travel-www-delta-com",
+      "label": "public-site-screening",
+      "category": "travel",
+      "source": "https://www.delta.com/",
+      "requestedUrl": "https://www.delta.com/",
+      "finalUrl": "https://www.delta.com/",
+      "status": "ok",
+      "durationMs": 18151,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5012,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10025,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15031,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "travel-www-united-com",
+      "label": "collection-failure",
+      "category": "travel",
+      "source": "https://www.united.com/",
+      "requestedUrl": "https://www.united.com/",
+      "finalUrl": null,
+      "status": "error",
+      "durationMs": 184,
+      "expectedRapid": null,
+      "samples": [],
+      "error": "net::ERR_HTTP2_PROTOCOL_ERROR"
+    },
+    {
+      "id": "travel-www-amtrak-com",
+      "label": "public-site-screening",
+      "category": "travel",
+      "source": "https://www.amtrak.com/",
+      "requestedUrl": "https://www.amtrak.com/",
+      "finalUrl": "https://www.amtrak.com/home",
+      "status": "ok",
+      "durationMs": 19752,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 279,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5294,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10304,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15306,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "travel-www-nationalparks-org",
+      "label": "public-site-screening",
+      "category": "travel",
+      "source": "https://www.nationalparks.org/",
+      "requestedUrl": "https://www.nationalparks.org/",
+      "finalUrl": "https://www.nationalparks.org/",
+      "status": "ok",
+      "durationMs": 18271,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5006,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10016,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15022,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "games-www-chess-com",
+      "label": "public-site-screening",
+      "category": "games",
+      "source": "https://www.chess.com/",
+      "requestedUrl": "https://www.chess.com/",
+      "finalUrl": "https://www.chess.com/",
+      "status": "ok",
+      "durationMs": 18409,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5016,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10025,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15029,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "games-lichess-org",
+      "label": "public-site-screening",
+      "category": "games",
+      "source": "https://lichess.org/",
+      "requestedUrl": "https://lichess.org/",
+      "finalUrl": "https://lichess.org/",
+      "status": "ok",
+      "durationMs": 18494,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 74959,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5004,
+          "usageBytes": 74959,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10013,
+          "usageBytes": 74959,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15025,
+          "usageBytes": 74959,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "games-www-miniclip-com",
+      "label": "public-site-screening",
+      "category": "games",
+      "source": "https://www.miniclip.com/",
+      "requestedUrl": "https://www.miniclip.com/",
+      "finalUrl": "https://www.miniclip.com/",
+      "status": "ok",
+      "durationMs": 18225,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5011,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10025,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15031,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "games-www-crazygames-com",
+      "label": "public-site-screening",
+      "category": "games",
+      "source": "https://www.crazygames.com/",
+      "requestedUrl": "https://www.crazygames.com/",
+      "finalUrl": "https://www.crazygames.com/",
+      "status": "ok",
+      "durationMs": 18230,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 730649,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5016,
+          "usageBytes": 730649,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10018,
+          "usageBytes": 730649,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15024,
+          "usageBytes": 730649,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "games-poki-com",
+      "label": "public-site-screening",
+      "category": "games",
+      "source": "https://poki.com/",
+      "requestedUrl": "https://poki.com/",
+      "finalUrl": "https://poki.com/",
+      "status": "ok",
+      "durationMs": 18164,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 3,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5012,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10014,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15019,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "games-itch-io",
+      "label": "public-site-screening",
+      "category": "games",
+      "source": "https://itch.io/",
+      "requestedUrl": "https://itch.io/",
+      "finalUrl": "https://itch.io/",
+      "status": "ok",
+      "durationMs": 19053,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5016,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10027,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15043,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "games-store-steampowered-com",
+      "label": "public-site-screening",
+      "category": "games",
+      "source": "https://store.steampowered.com/",
+      "requestedUrl": "https://store.steampowered.com/",
+      "finalUrl": "https://store.steampowered.com/",
+      "status": "ok",
+      "durationMs": 18350,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5005,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10019,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15032,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "games-www-roblox-com",
+      "label": "public-site-screening",
+      "category": "games",
+      "source": "https://www.roblox.com/",
+      "requestedUrl": "https://www.roblox.com/",
+      "finalUrl": "https://www.roblox.com/",
+      "status": "ok",
+      "durationMs": 18272,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5010,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10017,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15021,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "games-www-epicgames-com",
+      "label": "public-site-screening",
+      "category": "games",
+      "source": "https://www.epicgames.com/",
+      "requestedUrl": "https://www.epicgames.com/",
+      "finalUrl": "https://www.epicgames.com/",
+      "status": "ok",
+      "durationMs": 18222,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5010,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10017,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15034,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "games-js13kgames-com",
+      "label": "public-site-screening",
+      "category": "games",
+      "source": "https://js13kgames.com/",
+      "requestedUrl": "https://js13kgames.com/",
+      "finalUrl": "https://js13kgames.com/",
+      "status": "ok",
+      "durationMs": 18186,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 80,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5006,
+          "usageBytes": 80,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10011,
+          "usageBytes": 80,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15026,
+          "usageBytes": 80,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "pwa-offline-app-diagrams-net",
+      "label": "public-site-screening",
+      "category": "pwa-offline",
+      "source": "https://app.diagrams.net/",
+      "requestedUrl": "https://app.diagrams.net/",
+      "finalUrl": "https://app.diagrams.net/",
+      "status": "ok",
+      "durationMs": 18174,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5017,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10027,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15041,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "pwa-offline-excalidraw-com",
+      "label": "public-site-screening",
+      "category": "pwa-offline",
+      "source": "https://excalidraw.com/",
+      "requestedUrl": "https://excalidraw.com/",
+      "finalUrl": "https://excalidraw.com/",
+      "status": "ok",
+      "durationMs": 18197,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 4969728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5005,
+          "usageBytes": 5428484,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10022,
+          "usageBytes": 5428484,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15027,
+          "usageBytes": 5428484,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "pwa-offline-www-tldraw-com",
+      "label": "public-site-screening",
+      "category": "pwa-offline",
+      "source": "https://www.tldraw.com/",
+      "requestedUrl": "https://www.tldraw.com/",
+      "finalUrl": "https://www.tldraw.com/",
+      "status": "ok",
+      "durationMs": 18265,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5006,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10016,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15027,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "pwa-offline-www-photopea-com",
+      "label": "public-site-screening",
+      "category": "pwa-offline",
+      "source": "https://www.photopea.com/",
+      "requestedUrl": "https://www.photopea.com/",
+      "finalUrl": "https://www.photopea.com/",
+      "status": "ok",
+      "durationMs": 18577,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5015,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10018,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15023,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "pwa-offline-www-pixlr-com",
+      "label": "public-site-screening",
+      "category": "pwa-offline",
+      "source": "https://www.pixlr.com/",
+      "requestedUrl": "https://www.pixlr.com/",
+      "finalUrl": "https://pixlr.com/",
+      "status": "ok",
+      "durationMs": 18277,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 19224,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5007,
+          "usageBytes": 19224,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10015,
+          "usageBytes": 19224,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15018,
+          "usageBytes": 19224,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "pwa-offline-squoosh-app",
+      "label": "public-site-screening",
+      "category": "pwa-offline",
+      "source": "https://squoosh.app/",
+      "requestedUrl": "https://squoosh.app/",
+      "finalUrl": "https://squoosh.app/",
+      "status": "ok",
+      "durationMs": 18287,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 565889,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5011,
+          "usageBytes": 565889,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10023,
+          "usageBytes": 565889,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15039,
+          "usageBytes": 565889,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "pwa-offline-whatpwacando-today",
+      "label": "public-site-screening",
+      "category": "pwa-offline",
+      "source": "https://whatpwacando.today/",
+      "requestedUrl": "https://whatpwacando.today/",
+      "finalUrl": "https://whatpwacando.today/",
+      "status": "ok",
+      "durationMs": 18332,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 3265792,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5005,
+          "usageBytes": 4584324,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10014,
+          "usageBytes": 23693444,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15023,
+          "usageBytes": 23693444,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "pwa-offline-webaim-org",
+      "label": "public-site-screening",
+      "category": "pwa-offline",
+      "source": "https://webaim.org/",
+      "requestedUrl": "https://webaim.org/",
+      "finalUrl": "https://webaim.org/",
+      "status": "ok",
+      "durationMs": 18282,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5013,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10017,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15033,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "pwa-offline-www-iloveimg-com",
+      "label": "public-site-screening",
+      "category": "pwa-offline",
+      "source": "https://www.iloveimg.com/",
+      "requestedUrl": "https://www.iloveimg.com/",
+      "finalUrl": "https://www.iloveimg.com/",
+      "status": "ok",
+      "durationMs": 18234,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5013,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10016,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15032,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "pwa-offline-www-remove-bg",
+      "label": "public-site-screening",
+      "category": "pwa-offline",
+      "source": "https://www.remove.bg/",
+      "requestedUrl": "https://www.remove.bg/",
+      "finalUrl": "https://www.remove.bg/",
+      "status": "ok",
+      "durationMs": 18392,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5012,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10023,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15032,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "developer-docs-developer-mozilla-org",
+      "label": "public-site-screening",
+      "category": "developer-docs",
+      "source": "https://developer.mozilla.org/",
+      "requestedUrl": "https://developer.mozilla.org/",
+      "finalUrl": "https://developer.mozilla.org/en-US/",
+      "status": "ok",
+      "durationMs": 18154,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5005,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10018,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15019,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "developer-docs-web-dev",
+      "label": "public-site-screening",
+      "category": "developer-docs",
+      "source": "https://web.dev/",
+      "requestedUrl": "https://web.dev/",
+      "finalUrl": "https://web.dev/",
+      "status": "ok",
+      "durationMs": 18821,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 313047566,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5005,
+          "usageBytes": 313047566,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10021,
+          "usageBytes": 313047566,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15034,
+          "usageBytes": 313047566,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "developer-docs-developers-google-com",
+      "label": "public-site-screening",
+      "category": "developer-docs",
+      "source": "https://developers.google.com/",
+      "requestedUrl": "https://developers.google.com/",
+      "finalUrl": "https://developers.google.com/",
+      "status": "ok",
+      "durationMs": 18583,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 355659692,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5006,
+          "usageBytes": 355659692,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10010,
+          "usageBytes": 355659692,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15021,
+          "usageBytes": 355659692,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "developer-docs-learn-microsoft-com",
+      "label": "public-site-screening",
+      "category": "developer-docs",
+      "source": "https://learn.microsoft.com/",
+      "requestedUrl": "https://learn.microsoft.com/",
+      "finalUrl": "https://learn.microsoft.com/en-us/",
+      "status": "ok",
+      "durationMs": 18327,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5010,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10018,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15032,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "developer-docs-docs-github-com",
+      "label": "public-site-screening",
+      "category": "developer-docs",
+      "source": "https://docs.github.com/",
+      "requestedUrl": "https://docs.github.com/",
+      "finalUrl": "https://docs.github.com/en",
+      "status": "ok",
+      "durationMs": 18163,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5017,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10025,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15028,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "developer-docs-docs-gitlab-com",
+      "label": "public-site-screening",
+      "category": "developer-docs",
+      "source": "https://docs.gitlab.com/",
+      "requestedUrl": "https://docs.gitlab.com/",
+      "finalUrl": "https://docs.gitlab.com/",
+      "status": "ok",
+      "durationMs": 18174,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5002,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10012,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15017,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "developer-docs-docs-docker-com",
+      "label": "public-site-screening",
+      "category": "developer-docs",
+      "source": "https://docs.docker.com/",
+      "requestedUrl": "https://docs.docker.com/",
+      "finalUrl": "https://docs.docker.com/",
+      "status": "ok",
+      "durationMs": 18196,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5015,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10026,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15029,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "developer-docs-kubernetes-io",
+      "label": "public-site-screening",
+      "category": "developer-docs",
+      "source": "https://kubernetes.io/docs/",
+      "requestedUrl": "https://kubernetes.io/docs/",
+      "finalUrl": "https://kubernetes.io/docs/home/",
+      "status": "ok",
+      "durationMs": 18452,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5018,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10028,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15034,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "developer-docs-www-w3-org",
+      "label": "public-site-screening",
+      "category": "developer-docs",
+      "source": "https://www.w3.org/",
+      "requestedUrl": "https://www.w3.org/",
+      "finalUrl": "https://www.w3.org/",
+      "status": "ok",
+      "durationMs": 18160,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5017,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10021,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15035,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "developer-docs-nodejs-org",
+      "label": "public-site-screening",
+      "category": "developer-docs",
+      "source": "https://nodejs.org/docs/latest/api/",
+      "requestedUrl": "https://nodejs.org/docs/latest/api/",
+      "finalUrl": "https://nodejs.org/docs/latest/api/",
+      "status": "ok",
+      "durationMs": 18166,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5013,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10018,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15022,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "ordinary-control-example-com",
+      "label": "public-site-screening",
+      "category": "ordinary-control",
+      "source": "https://example.com/",
+      "requestedUrl": "https://example.com/",
+      "finalUrl": "https://example.com/",
+      "status": "ok",
+      "durationMs": 18127,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5004,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10010,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15012,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "ordinary-control-example-org",
+      "label": "public-site-screening",
+      "category": "ordinary-control",
+      "source": "https://example.org/",
+      "requestedUrl": "https://example.org/",
+      "finalUrl": "https://example.org/",
+      "status": "ok",
+      "durationMs": 18167,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5017,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10023,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15036,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "ordinary-control-www-iana-org",
+      "label": "public-site-screening",
+      "category": "ordinary-control",
+      "source": "https://www.iana.org/",
+      "requestedUrl": "https://www.iana.org/",
+      "finalUrl": "https://www.iana.org/",
+      "status": "ok",
+      "durationMs": 18230,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5006,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10014,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15022,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "ordinary-control-httpbin-org",
+      "label": "public-site-screening",
+      "category": "ordinary-control",
+      "source": "https://httpbin.org/",
+      "requestedUrl": "https://httpbin.org/",
+      "finalUrl": "https://httpbin.org/",
+      "status": "ok",
+      "durationMs": 18528,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5013,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10025,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15030,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "ordinary-control-httpstat-us",
+      "label": "collection-failure",
+      "category": "ordinary-control",
+      "source": "https://httpstat.us/",
+      "requestedUrl": "https://httpstat.us/",
+      "finalUrl": null,
+      "status": "error",
+      "durationMs": 9404,
+      "expectedRapid": null,
+      "samples": [],
+      "error": "net::ERR_EMPTY_RESPONSE"
+    },
+    {
+      "id": "ordinary-control-jsonplaceholder-typicode-com",
+      "label": "public-site-screening",
+      "category": "ordinary-control",
+      "source": "https://jsonplaceholder.typicode.com/",
+      "requestedUrl": "https://jsonplaceholder.typicode.com/",
+      "finalUrl": "https://jsonplaceholder.typicode.com/",
+      "status": "ok",
+      "durationMs": 18143,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5007,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10010,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15015,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "ordinary-control-www-cloudflare-com",
+      "label": "public-site-screening",
+      "category": "ordinary-control",
+      "source": "https://www.cloudflare.com/",
+      "requestedUrl": "https://www.cloudflare.com/",
+      "finalUrl": "https://www.cloudflare.com/",
+      "status": "ok",
+      "durationMs": 18389,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5014,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10030,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15046,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "ordinary-control-example-net",
+      "label": "public-site-screening",
+      "category": "ordinary-control",
+      "source": "https://example.net/",
+      "requestedUrl": "https://example.net/",
+      "finalUrl": "https://example.net/",
+      "status": "ok",
+      "durationMs": 18229,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5016,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10027,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15037,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "ordinary-control-info-cern-ch",
+      "label": "public-site-screening",
+      "category": "ordinary-control",
+      "source": "https://info.cern.ch/",
+      "requestedUrl": "https://info.cern.ch/",
+      "finalUrl": "https://info.cern.ch/",
+      "status": "ok",
+      "durationMs": 18839,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5004,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10018,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15033,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "ordinary-control-search-brave-com",
+      "label": "public-site-screening",
+      "category": "ordinary-control",
+      "source": "https://search.brave.com/",
+      "requestedUrl": "https://search.brave.com/",
+      "finalUrl": "https://search.brave.com/",
+      "status": "ok",
+      "durationMs": 18225,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5018,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10023,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15029,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    }
+  ]
+}

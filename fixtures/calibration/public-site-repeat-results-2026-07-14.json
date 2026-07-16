@@ -1,0 +1,611 @@
+{
+  "metadata": {
+    "browser": "C:\\Users\\Me\\AppData\\Local\\ms-playwright\\chromium-1228\\chrome-win64\\chrome.exe",
+    "collectedAt": "2026-07-15T03:06:04.000Z",
+    "status": "complete",
+    "targetPath": "D:\\Apps\\Extensions\\Browser\\frostguard\\fixtures\\calibration\\public-site-repeat-sample-2026-07-14.json",
+    "targetCount": 13,
+    "attemptedCount": 13,
+    "protocol": {
+      "interaction": "passive-page-load",
+      "sampleCount": 4,
+      "sampleIntervalMs": 5000,
+      "isolation": "clean-profile-with-per-origin-clear"
+    }
+  },
+  "config": {
+    "fileSystemGrowthThresholdBytes": 134217728,
+    "totalGrowthThresholdBytes": 536870912,
+    "absoluteFileSystemWarningBytes": 1073741824
+  },
+  "traces": [
+    {
+      "id": "chromium-empty-control",
+      "label": "benign-control",
+      "source": "chromium-local-opfs",
+      "expectedRapid": false,
+      "scenarioResult": {
+        "status": "done",
+        "fileSize": 0,
+        "estimatedQuota": 10737418416
+      },
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        },
+        {
+          "at": 1503,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        },
+        {
+          "at": 3014,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        },
+        {
+          "at": 4518,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        },
+        {
+          "at": 6031,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        },
+        {
+          "at": 7539,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        },
+        {
+          "at": 9040,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        },
+        {
+          "at": 10554,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        }
+      ]
+    },
+    {
+      "id": "chromium-database-model",
+      "label": "benign-database",
+      "source": "chromium-local-opfs",
+      "expectedRapid": false,
+      "scenarioResult": {
+        "status": "done",
+        "fileSize": 100663296,
+        "estimatedQuota": 10838081712
+      },
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 8388974,
+          "fileSystemBytes": 8388974
+        },
+        {
+          "at": 1516,
+          "usageBytes": 33554798,
+          "fileSystemBytes": 33554798
+        },
+        {
+          "at": 3022,
+          "usageBytes": 58720622,
+          "fileSystemBytes": 58720622
+        },
+        {
+          "at": 4534,
+          "usageBytes": 79692142,
+          "fileSystemBytes": 79692142
+        },
+        {
+          "at": 6043,
+          "usageBytes": 100663472,
+          "fileSystemBytes": 100663472
+        },
+        {
+          "at": 7553,
+          "usageBytes": 100663472,
+          "fileSystemBytes": 100663472
+        },
+        {
+          "at": 9063,
+          "usageBytes": 100663472,
+          "fileSystemBytes": 100663472
+        },
+        {
+          "at": 10572,
+          "usageBytes": 100663472,
+          "fileSystemBytes": 100663472
+        }
+      ]
+    },
+    {
+      "id": "chromium-frost-construction",
+      "label": "attack-construction",
+      "source": "chromium-local-opfs",
+      "expectedRapid": true,
+      "scenarioResult": {
+        "status": "done",
+        "fileSize": 268435456,
+        "estimatedQuota": 11005853872
+      },
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        },
+        {
+          "at": 1510,
+          "usageBytes": 268435632,
+          "fileSystemBytes": 268435632
+        },
+        {
+          "at": 3021,
+          "usageBytes": 268435632,
+          "fileSystemBytes": 268435632
+        },
+        {
+          "at": 4530,
+          "usageBytes": 268435632,
+          "fileSystemBytes": 268435632
+        },
+        {
+          "at": 6039,
+          "usageBytes": 268435632,
+          "fileSystemBytes": 268435632
+        },
+        {
+          "at": 7554,
+          "usageBytes": 268435632,
+          "fileSystemBytes": 268435632
+        },
+        {
+          "at": 9065,
+          "usageBytes": 268435632,
+          "fileSystemBytes": 268435632
+        },
+        {
+          "at": 10579,
+          "usageBytes": 268435632,
+          "fileSystemBytes": 268435632
+        }
+      ]
+    },
+    {
+      "id": "ordinary-control-info-cern-ch",
+      "label": "public-site-screening",
+      "category": "ordinary-control",
+      "source": "https://info.cern.ch/",
+      "requestedUrl": "https://info.cern.ch/",
+      "finalUrl": "https://info.cern.ch/",
+      "status": "ok",
+      "durationMs": 18586,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 3,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5016,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10025,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15035,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "games-www-epicgames-com",
+      "label": "public-site-screening",
+      "category": "games",
+      "source": "https://www.epicgames.com/",
+      "requestedUrl": "https://www.epicgames.com/",
+      "finalUrl": "https://www.epicgames.com/",
+      "status": "ok",
+      "durationMs": 18169,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5011,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10018,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15027,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "maps-earth-google-com",
+      "label": "public-site-screening",
+      "category": "maps",
+      "source": "https://earth.google.com/",
+      "requestedUrl": "https://earth.google.com/",
+      "finalUrl": "https://earth.google.com/web/",
+      "status": "ok",
+      "durationMs": 18313,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 1142784,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5009,
+          "usageBytes": 1142784,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10022,
+          "usageBytes": 1142784,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15034,
+          "usageBytes": 1142784,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "pwa-offline-webaim-org",
+      "label": "public-site-screening",
+      "category": "pwa-offline",
+      "source": "https://webaim.org/",
+      "requestedUrl": "https://webaim.org/",
+      "finalUrl": "https://webaim.org/",
+      "status": "ok",
+      "durationMs": 18310,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5014,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10022,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15036,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "travel-www-tripadvisor-com",
+      "label": "public-site-screening",
+      "category": "travel",
+      "source": "https://www.tripadvisor.com/",
+      "requestedUrl": "https://www.tripadvisor.com/",
+      "finalUrl": "https://www.tripadvisor.com/",
+      "status": "ok",
+      "durationMs": 18191,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5014,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10028,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15034,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "finance-www-marketwatch-com",
+      "label": "public-site-screening",
+      "category": "finance",
+      "source": "https://www.marketwatch.com/",
+      "requestedUrl": "https://www.marketwatch.com/",
+      "finalUrl": "https://www.marketwatch.com/",
+      "status": "ok",
+      "durationMs": 18286,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5018,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10034,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15038,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "pwa-offline-excalidraw-com",
+      "label": "public-site-screening",
+      "category": "pwa-offline",
+      "source": "https://excalidraw.com/",
+      "requestedUrl": "https://excalidraw.com/",
+      "finalUrl": "https://excalidraw.com/",
+      "status": "ok",
+      "durationMs": 18202,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 4967936,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5007,
+          "usageBytes": 5428484,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10011,
+          "usageBytes": 5428484,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15013,
+          "usageBytes": 5428484,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "developer-docs-developer-mozilla-org",
+      "label": "public-site-screening",
+      "category": "developer-docs",
+      "source": "https://developer.mozilla.org/",
+      "requestedUrl": "https://developer.mozilla.org/",
+      "finalUrl": "https://developer.mozilla.org/en-US/",
+      "status": "ok",
+      "durationMs": 18299,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5004,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10020,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15033,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "maps-www-bing-com",
+      "label": "public-site-screening",
+      "category": "maps",
+      "source": "https://www.bing.com/maps",
+      "requestedUrl": "https://www.bing.com/maps",
+      "finalUrl": "https://www.bing.com/maps/sharing?webglerror=a",
+      "status": "ok",
+      "durationMs": 18254,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5019,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10035,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15040,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "maps-maps-apple-com",
+      "label": "public-site-screening",
+      "category": "maps",
+      "source": "https://maps.apple.com/",
+      "requestedUrl": "https://maps.apple.com/",
+      "finalUrl": "https://maps.apple.com/",
+      "status": "ok",
+      "durationMs": 18581,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5004,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10016,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15020,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "games-lichess-org",
+      "label": "public-site-screening",
+      "category": "games",
+      "source": "https://lichess.org/",
+      "requestedUrl": "https://lichess.org/",
+      "finalUrl": "https://lichess.org/",
+      "status": "ok",
+      "durationMs": 18485,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 74959,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5016,
+          "usageBytes": 74959,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10019,
+          "usageBytes": 74959,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15032,
+          "usageBytes": 74959,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "finance-www-morningstar-com",
+      "label": "public-site-screening",
+      "category": "finance",
+      "source": "https://www.morningstar.com/",
+      "requestedUrl": "https://www.morningstar.com/",
+      "finalUrl": "https://www.morningstar.com/",
+      "status": "ok",
+      "durationMs": 22042,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5006,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10021,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15031,
+          "usageBytes": 0,
+          "fileSystemBytes": null
+        }
+      ]
+    },
+    {
+      "id": "developer-docs-docs-docker-com",
+      "label": "public-site-screening",
+      "category": "developer-docs",
+      "source": "https://docs.docker.com/",
+      "requestedUrl": "https://docs.docker.com/",
+      "finalUrl": "https://docs.docker.com/",
+      "status": "ok",
+      "durationMs": 18177,
+      "expectedRapid": null,
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 5013,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 10022,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        },
+        {
+          "at": 15026,
+          "usageBytes": 73728,
+          "fileSystemBytes": null
+        }
+      ]
+    }
+  ]
+}

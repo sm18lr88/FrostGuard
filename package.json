@@ -1,0 +1,53 @@
+{
+    "name": "frostguard-chrome-extension",
+    "version": "0.2.0",
+    "private": true,
+    "type": "module",
+    "description": "Manifest V3 defense against OPFS-based SSD timing side channels such as FROST.",
+    "license": "MIT",
+    "engines": {
+        "node": ">=24"
+    },
+    "scripts": {
+        "validate": "node tools/validate.mjs",
+        "test": "node --test",
+        "check": "npm run validate && npm test",
+        "calibration:collect": "node tools/calibration-collect.mjs",
+        "calibration:replay": "node tools/calibration-replay.mjs",
+        "calibration:report": "node tools/calibration-report.mjs",
+        "smoke:browser": "node tools/browser-smoke.mjs"
+    },
+    "frostguardMetadata": {
+        "lastReviewed": "2026-07-14",
+        "runtimeDependencies": 0,
+        "manifestVersion": 3,
+        "minimumChromeVersion": 120,
+        "implementation": "Browser-native JavaScript modules with no bundler",
+        "references": [
+            {
+                "title": "FROST research paper",
+                "url": "https://hannesweissteiner.com/pdfs/frost.pdf"
+            },
+            {
+                "title": "Ars Technica report on FROST",
+                "url": "https://arstechnica.com/security/2026/05/websites-have-a-new-way-to-spy-on-visitors-analyzing-their-ssd-activity/"
+            },
+            {
+                "title": "Chrome Scripting API",
+                "url": "https://developer.chrome.com/docs/extensions/reference/api/scripting"
+            },
+            {
+                "title": "Chrome content scripts",
+                "url": "https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts"
+            },
+            {
+                "title": "Chrome Browsing Data API",
+                "url": "https://developer.chrome.com/docs/extensions/reference/api/browsingData"
+            },
+            {
+                "title": "MDN Origin Private File System overview",
+                "url": "https://developer.mozilla.org/docs/Web/API/File_System_API/Origin_private_file_system"
+            }
+        ]
+    }
+}

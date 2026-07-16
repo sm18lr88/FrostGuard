@@ -1,0 +1,260 @@
+{
+  "metadata": {
+    "browser": "C:\\Users\\Me\\AppData\\Local\\ms-playwright\\chromium-1228\\chrome-win64\\chrome.exe",
+    "collectedAt": "2026-07-15T03:00:15.861Z",
+    "status": "complete",
+    "targetPath": "D:\\Apps\\Extensions\\Browser\\frostguard\\fixtures\\calibration\\public-site-retries-2026-07-14.json",
+    "targetCount": 6,
+    "attemptedCount": 6,
+    "protocol": {
+      "interaction": "passive-page-load",
+      "sampleCount": 4,
+      "sampleIntervalMs": 5000,
+      "isolation": "clean-profile-with-per-origin-clear"
+    }
+  },
+  "config": {
+    "fileSystemGrowthThresholdBytes": 134217728,
+    "totalGrowthThresholdBytes": 536870912,
+    "absoluteFileSystemWarningBytes": 1073741824
+  },
+  "traces": [
+    {
+      "id": "chromium-empty-control",
+      "label": "benign-control",
+      "source": "chromium-local-opfs",
+      "expectedRapid": false,
+      "scenarioResult": {
+        "status": "done",
+        "fileSize": 0,
+        "estimatedQuota": 10737418416
+      },
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        },
+        {
+          "at": 1512,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        },
+        {
+          "at": 3022,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        },
+        {
+          "at": 4537,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        },
+        {
+          "at": 6048,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        },
+        {
+          "at": 7551,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        },
+        {
+          "at": 9065,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        },
+        {
+          "at": 10575,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        }
+      ]
+    },
+    {
+      "id": "chromium-database-model",
+      "label": "benign-database",
+      "source": "chromium-local-opfs",
+      "expectedRapid": false,
+      "scenarioResult": {
+        "status": "done",
+        "fileSize": 100663296,
+        "estimatedQuota": 10838081712
+      },
+      "samples": [
+        {
+          "at": 2,
+          "usageBytes": 8388974,
+          "fileSystemBytes": 8388974
+        },
+        {
+          "at": 1511,
+          "usageBytes": 33554798,
+          "fileSystemBytes": 33554798
+        },
+        {
+          "at": 3023,
+          "usageBytes": 58720622,
+          "fileSystemBytes": 58720622
+        },
+        {
+          "at": 4535,
+          "usageBytes": 79692142,
+          "fileSystemBytes": 79692142
+        },
+        {
+          "at": 6047,
+          "usageBytes": 100663472,
+          "fileSystemBytes": 100663472
+        },
+        {
+          "at": 7563,
+          "usageBytes": 100663472,
+          "fileSystemBytes": 100663472
+        },
+        {
+          "at": 9071,
+          "usageBytes": 100663472,
+          "fileSystemBytes": 100663472
+        },
+        {
+          "at": 10584,
+          "usageBytes": 100663472,
+          "fileSystemBytes": 100663472
+        }
+      ]
+    },
+    {
+      "id": "chromium-frost-construction",
+      "label": "attack-construction",
+      "source": "chromium-local-opfs",
+      "expectedRapid": true,
+      "scenarioResult": {
+        "status": "done",
+        "fileSize": 268435456,
+        "estimatedQuota": 11005853872
+      },
+      "samples": [
+        {
+          "at": 1,
+          "usageBytes": 176,
+          "fileSystemBytes": 176
+        },
+        {
+          "at": 1511,
+          "usageBytes": 268435632,
+          "fileSystemBytes": 268435632
+        },
+        {
+          "at": 3025,
+          "usageBytes": 268435632,
+          "fileSystemBytes": 268435632
+        },
+        {
+          "at": 4527,
+          "usageBytes": 268435632,
+          "fileSystemBytes": 268435632
+        },
+        {
+          "at": 6039,
+          "usageBytes": 268435632,
+          "fileSystemBytes": 268435632
+        },
+        {
+          "at": 7548,
+          "usageBytes": 268435632,
+          "fileSystemBytes": 268435632
+        },
+        {
+          "at": 9059,
+          "usageBytes": 268435632,
+          "fileSystemBytes": 268435632
+        },
+        {
+          "at": 10574,
+          "usageBytes": 268435632,
+          "fileSystemBytes": 268435632
+        }
+      ]
+    },
+    {
+      "id": "commerce-www-costco-com",
+      "label": "collection-failure",
+      "category": "commerce",
+      "source": "https://www.costco.com/",
+      "requestedUrl": "https://www.costco.com/",
+      "finalUrl": null,
+      "status": "error",
+      "durationMs": 146,
+      "expectedRapid": null,
+      "samples": [],
+      "error": "net::ERR_HTTP2_PROTOCOL_ERROR"
+    },
+    {
+      "id": "news-www-washingtonpost-com",
+      "label": "collection-failure",
+      "category": "news",
+      "source": "https://www.washingtonpost.com/",
+      "requestedUrl": "https://www.washingtonpost.com/",
+      "finalUrl": null,
+      "status": "error",
+      "durationMs": 159,
+      "expectedRapid": null,
+      "samples": [],
+      "error": "net::ERR_HTTP2_PROTOCOL_ERROR"
+    },
+    {
+      "id": "finance-www-fidelity-com",
+      "label": "collection-failure",
+      "category": "finance",
+      "source": "https://www.fidelity.com/",
+      "requestedUrl": "https://www.fidelity.com/",
+      "finalUrl": null,
+      "status": "error",
+      "durationMs": 137,
+      "expectedRapid": null,
+      "samples": [],
+      "error": "net::ERR_HTTP2_PROTOCOL_ERROR"
+    },
+    {
+      "id": "travel-www-hotels-com",
+      "label": "collection-failure",
+      "category": "travel",
+      "source": "https://www.hotels.com/",
+      "requestedUrl": "https://www.hotels.com/",
+      "finalUrl": null,
+      "status": "error",
+      "durationMs": 159,
+      "expectedRapid": null,
+      "samples": [],
+      "error": "net::ERR_HTTP2_PROTOCOL_ERROR"
+    },
+    {
+      "id": "travel-www-united-com",
+      "label": "collection-failure",
+      "category": "travel",
+      "source": "https://www.united.com/",
+      "requestedUrl": "https://www.united.com/",
+      "finalUrl": null,
+      "status": "error",
+      "durationMs": 135,
+      "expectedRapid": null,
+      "samples": [],
+      "error": "net::ERR_HTTP2_PROTOCOL_ERROR"
+    },
+    {
+      "id": "ordinary-control-httpstat-us",
+      "label": "collection-failure",
+      "category": "ordinary-control",
+      "source": "https://httpstat.us/",
+      "requestedUrl": "https://httpstat.us/",
+      "finalUrl": null,
+      "status": "error",
+      "durationMs": 9403,
+      "expectedRapid": null,
+      "samples": [],
+      "error": "net::ERR_CONNECTION_CLOSED"
+    }
+  ]
+}

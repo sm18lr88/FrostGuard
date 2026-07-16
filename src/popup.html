@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FROST Guard</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="brand">
+        <img src="../icons/icon48.png" width="36" height="36" alt="" />
+        <div>
+          <h1>FROST Guard</h1>
+          <p>OPFS side-channel shield</p>
+        </div>
+        <label class="switch" title="Enable or disable protection globally">
+          <input id="protection-toggle" type="checkbox" aria-label="Global protection. Changing this setting reloads the active tab." />
+          <span aria-hidden="true"></span>
+        </label>
+      </header>
+
+      <section id="status-card" class="status-card" aria-live="polite">
+        <div class="status-row">
+          <span id="status-dot" class="status-dot"></span>
+          <div>
+            <h2 id="status-title">Loading…</h2>
+            <p id="site-origin">Checking this page</p>
+          </div>
+        </div>
+        <p id="status-detail" class="status-detail"></p>
+      </section>
+
+      <section id="site-controls" class="panel" hidden>
+        <h2>Site controls</h2>
+        <div class="button-grid">
+          <button id="temporary-button" type="button">Allow &amp; reload for 1 hour</button>
+          <button id="permanent-button" type="button">Always allow &amp; reload</button>
+          <button id="purge-button" class="danger span-2" type="button">
+            Purge OPFS + service worker
+          </button>
+        </div>
+        <p class="hint">Changing protection reloads this tab. Purging deletes this origin’s browser file-system data and service worker.</p>
+      </section>
+
+      <section class="panel metrics">
+        <h2>Activity</h2>
+        <div class="metric-row">
+          <div><strong id="site-blocked">0</strong><span>blocked here</span></div>
+          <div><strong id="all-blocked">0</strong><span>blocked total</span></div>
+          <div><strong id="growth-count">0</strong><span>growth alerts</span></div>
+        </div>
+        <p id="last-event" class="last-event">No events recorded.</p>
+      </section>
+
+      <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+
+      <footer>
+        <button id="settings-button" class="link-button" type="button">Settings, build info &amp; event log</button>
+        <span id="version"></span>
+      </footer>
+    </main>
+
+    <dialog id="purge-dialog" aria-labelledby="purge-dialog-title">
+      <form method="dialog" class="dialog-card">
+        <h2 id="purge-dialog-title">Clear this site’s local data?</h2>
+        <p>This permanently deletes OPFS data and the service worker for <strong id="purge-origin"></strong>, then reloads the tab.</p>
+        <div class="dialog-actions">
+          <button value="cancel" autofocus>Cancel</button>
+          <button id="confirm-purge" class="danger confirm" value="confirm">Clear site data</button>
+        </div>
+      </form>
+    </dialog>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

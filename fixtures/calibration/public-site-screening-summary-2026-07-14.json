@@ -1,0 +1,211 @@
+{
+  "generatedAt": "2026-07-15T02:58:39.095Z",
+  "classifierVersion": 1,
+  "attemptedCount": 130,
+  "successCount": 124,
+  "failureCount": 6,
+  "classifierCandidateCount": 0,
+  "categories": [
+    {
+      "category": "commerce",
+      "attempted": 10,
+      "success": 9,
+      "failure": 1
+    },
+    {
+      "category": "developer-docs",
+      "attempted": 10,
+      "success": 10,
+      "failure": 0
+    },
+    {
+      "category": "education",
+      "attempted": 10,
+      "success": 10,
+      "failure": 0
+    },
+    {
+      "category": "finance",
+      "attempted": 10,
+      "success": 9,
+      "failure": 1
+    },
+    {
+      "category": "games",
+      "attempted": 10,
+      "success": 10,
+      "failure": 0
+    },
+    {
+      "category": "maps",
+      "attempted": 10,
+      "success": 10,
+      "failure": 0
+    },
+    {
+      "category": "media",
+      "attempted": 10,
+      "success": 10,
+      "failure": 0
+    },
+    {
+      "category": "news",
+      "attempted": 10,
+      "success": 9,
+      "failure": 1
+    },
+    {
+      "category": "office-ide",
+      "attempted": 10,
+      "success": 10,
+      "failure": 0
+    },
+    {
+      "category": "ordinary-control",
+      "attempted": 10,
+      "success": 9,
+      "failure": 1
+    },
+    {
+      "category": "pwa-offline",
+      "attempted": 10,
+      "success": 10,
+      "failure": 0
+    },
+    {
+      "category": "social",
+      "attempted": 10,
+      "success": 10,
+      "failure": 0
+    },
+    {
+      "category": "travel",
+      "attempted": 10,
+      "success": 8,
+      "failure": 2
+    }
+  ],
+  "largestPeakGrowth": [
+    {
+      "id": "media-open-spotify-com",
+      "category": "media",
+      "source": "https://open.spotify.com/",
+      "peakGrowthBytes": 41569685,
+      "endGrowthBytes": 41569685
+    },
+    {
+      "id": "pwa-offline-whatpwacando-today",
+      "category": "pwa-offline",
+      "source": "https://whatpwacando.today/",
+      "peakGrowthBytes": 20427652,
+      "endGrowthBytes": 20427652
+    },
+    {
+      "id": "news-www-nytimes-com",
+      "category": "news",
+      "source": "https://www.nytimes.com/",
+      "peakGrowthBytes": 9287424,
+      "endGrowthBytes": 9287424
+    },
+    {
+      "id": "pwa-offline-excalidraw-com",
+      "category": "pwa-offline",
+      "source": "https://excalidraw.com/",
+      "peakGrowthBytes": 458756,
+      "endGrowthBytes": 458756
+    },
+    {
+      "id": "travel-www-airbnb-com",
+      "category": "travel",
+      "source": "https://www.airbnb.com/",
+      "peakGrowthBytes": 401055,
+      "endGrowthBytes": 401055
+    },
+    {
+      "id": "news-www-npr-org",
+      "category": "news",
+      "source": "https://www.npr.org/",
+      "peakGrowthBytes": 331776,
+      "endGrowthBytes": 331776
+    },
+    {
+      "id": "news-www-theguardian-com",
+      "category": "news",
+      "source": "https://www.theguardian.com/",
+      "peakGrowthBytes": 245760,
+      "endGrowthBytes": 245760
+    },
+    {
+      "id": "commerce-www-homedepot-com",
+      "category": "commerce",
+      "source": "https://www.homedepot.com/",
+      "peakGrowthBytes": 221184,
+      "endGrowthBytes": 221184
+    },
+    {
+      "id": "social-www-tiktok-com",
+      "category": "social",
+      "source": "https://www.tiktok.com/",
+      "peakGrowthBytes": 172032,
+      "endGrowthBytes": 172032
+    },
+    {
+      "id": "media-www-nationalgeographic-com",
+      "category": "media",
+      "source": "https://www.nationalgeographic.com/",
+      "peakGrowthBytes": 147456,
+      "endGrowthBytes": 147456
+    }
+  ],
+  "classifierCandidates": [],
+  "failures": [
+    {
+      "id": "commerce-www-costco-com",
+      "category": "commerce",
+      "source": "https://www.costco.com/",
+      "status": "error",
+      "error": "net::ERR_HTTP2_PROTOCOL_ERROR"
+    },
+    {
+      "id": "news-www-washingtonpost-com",
+      "category": "news",
+      "source": "https://www.washingtonpost.com/",
+      "status": "error",
+      "error": "net::ERR_HTTP2_PROTOCOL_ERROR"
+    },
+    {
+      "id": "finance-www-fidelity-com",
+      "category": "finance",
+      "source": "https://www.fidelity.com/",
+      "status": "error",
+      "error": "net::ERR_HTTP2_PROTOCOL_ERROR"
+    },
+    {
+      "id": "travel-www-hotels-com",
+      "category": "travel",
+      "source": "https://www.hotels.com/",
+      "status": "error",
+      "error": "net::ERR_HTTP2_PROTOCOL_ERROR"
+    },
+    {
+      "id": "travel-www-united-com",
+      "category": "travel",
+      "source": "https://www.united.com/",
+      "status": "error",
+      "error": "net::ERR_HTTP2_PROTOCOL_ERROR"
+    },
+    {
+      "id": "ordinary-control-httpstat-us",
+      "category": "ordinary-control",
+      "source": "https://httpstat.us/",
+      "status": "error",
+      "error": "net::ERR_EMPTY_RESPONSE"
+    }
+  ],
+  "caveats": [
+    "Observed storage growth does not establish malicious intent, abuse, tracking, persistence, resource exhaustion, or use of FROST.",
+    "Measurements are approximate and origin-scoped; they do not identify which party or script caused a change.",
+    "A negative result covers only one passive visit under the recorded conditions.",
+    "This preselected cohort cannot establish classifier accuracy or false-positive rates for the public web."
+  ]
+}

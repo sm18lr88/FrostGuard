@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "createdAt": "2026-07-14",
+    "selection": "Lowest 13 SHA-256 hashes of frostguard-2026-07-14:<trace-id> among 124 successful screening traces."
+  },
+  "targets": [
+    { "category": "ordinary-control", "url": "https://info.cern.ch/" },
+    { "category": "games", "url": "https://www.epicgames.com/" },
+    { "category": "maps", "url": "https://earth.google.com/" },
+    { "category": "pwa-offline", "url": "https://webaim.org/" },
+    { "category": "travel", "url": "https://www.tripadvisor.com/" },
+    { "category": "finance", "url": "https://www.marketwatch.com/" },
+    { "category": "pwa-offline", "url": "https://excalidraw.com/" },
+    { "category": "developer-docs", "url": "https://developer.mozilla.org/" },
+    { "category": "maps", "url": "https://www.bing.com/maps" },
+    { "category": "maps", "url": "https://maps.apple.com/" },
+    { "category": "games", "url": "https://lichess.org/" },
+    { "category": "finance", "url": "https://www.morningstar.com/" },
+    { "category": "developer-docs", "url": "https://docs.docker.com/" }
+  ]
+}

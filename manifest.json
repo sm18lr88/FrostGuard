@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "FROST Guard: OPFS Side-Channel Shield",
+  "short_name": "FROST Guard",
+  "version": "0.2.0",
+  "description": "Blocks unprompted OPFS access, detects suspicious browser-storage growth, and warns about SSD timing side-channel attempts.",
+  "minimum_chrome_version": "120",
+  "permissions": [
+    "alarms",
+    "browsingData",
+    "notifications",
+    "scripting",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "src/service-worker.js",
+    "type": "module"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'"
+  },
+  "action": {
+    "default_title": "FROST Guard",
+    "default_popup": "src/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "options_page": "src/options.html",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "incognito": "split"
+}

@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FROST Guard settings</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to settings</a>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <img src="../icons/icon48.png" width="42" height="42" alt="" />
+        <div>
+          <h1>FROST Guard</h1>
+          <p>OPFS side-channel protection settings</p>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="card hero">
+        <div>
+          <p class="eyebrow">Protection status</p>
+          <h2 id="hero-title">Loading…</h2>
+          <p id="hero-copy">Reading extension settings.</p>
+        </div>
+        <label class="switch large">
+          <input id="protection-enabled" name="protectionEnabled" type="checkbox" />
+          <span aria-hidden="true"></span>
+          <b>Global protection</b>
+        </label>
+      </section>
+
+      <div class="layout">
+        <div class="primary-column">
+          <section class="card">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Behavior</p>
+                <h2>Warnings and response</h2>
+              </div>
+              <button id="save-button" class="primary" type="button">Save settings</button>
+            </div>
+
+            <div class="setting-list">
+              <label class="setting-row">
+                <span><b>Desktop notifications</b><small>Show a low-priority Chrome notification only for monitor-confirmed storage growth.</small></span>
+                <input id="notifications-enabled" name="notificationsEnabled" type="checkbox" />
+              </label>
+              <label class="setting-row">
+                <span><b>In-page warning banner</b><small>Display a visible warning inside the affected tab.</small></span>
+                <input id="banner-enabled" name="bannerEnabled" type="checkbox" />
+              </label>
+              <label class="setting-row">
+                <span><b>Storage growth monitor</b><small>Use storage estimates to flag unusually large or rapid growth.</small></span>
+                <input id="monitor-enabled" name="storageMonitorEnabled" type="checkbox" />
+              </label>
+              <label class="setting-row">
+                <span><b>Automatic purge disabled</b><small>Growth estimates are heuristic and cannot safely justify deleting legitimate offline data. Use the popup’s reviewed manual purge instead.</small></span>
+                <input id="auto-purge-enabled" name="autoPurgeOnSuspiciousGrowth" type="checkbox" disabled />
+              </label>
+            </div>
+
+            <fieldset>
+              <legend>Detection thresholds</legend>
+              <div class="input-grid">
+                <label>
+                  <span>Rapid OPFS growth</span>
+                  <div class="unit-input"><input id="fs-growth-mib" name="fileSystemGrowthMiB" type="number" min="16" max="65536" step="16" autocomplete="off" /><em>MiB</em></div>
+                </label>
+                <label>
+                  <span>Fallback total growth</span>
+                  <div class="unit-input"><input id="total-growth-mib" name="totalGrowthMiB" type="number" min="16" max="65536" step="16" autocomplete="off" /><em>MiB</em></div>
+                </label>
+                <label>
+                  <span>Absolute OPFS warning</span>
+                  <div class="unit-input"><input id="absolute-fs-mib" name="absoluteFileSystemMiB" type="number" min="16" max="65536" step="16" autocomplete="off" /><em>MiB</em></div>
+                </label>
+              </div>
+              <p class="note">Lower thresholds increase sensitivity and false positives. Alerts require a second confirming sample; the default OPFS growth threshold is 128 MiB.</p>
+            </fieldset>
+            <p id="save-status" class="save-status" role="status" aria-live="polite"></p>
+          </section>
+
+          <section class="card">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Exceptions</p>
+                <h2>Permanent allowlist</h2>
+              </div>
+            </div>
+            <form id="allowlist-form" class="add-origin-form">
+              <label for="allowlist-origin">Origin to allow</label>
+              <div>
+                <input id="allowlist-origin" name="allowlistOrigin" type="url" inputmode="url" placeholder="https://example.com…" autocomplete="off" spellcheck="false" aria-describedby="allowlist-error" />
+                <button type="submit">Add origin</button>
+              </div>
+            </form>
+            <p id="allowlist-error" class="field-error" role="status"></p>
+            <p class="note">Exceptions apply to the scheme and hostname across all ports because Chrome match patterns cannot target a single port.</p>
+            <ul id="allowlist" class="allowlist"></ul>
+          </section>
+
+          <section class="card event-card">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Local audit trail</p>
+                <h2>Event log</h2>
+              </div>
+              <div class="button-row">
+                <button id="export-events" type="button">Export JSON</button>
+                <button id="clear-events" class="danger" type="button">Clear log</button>
+              </div>
+            </div>
+            <div class="event-summary">
+              <span><b id="event-total">0</b> <span id="event-total-label">events</span></span>
+              <span><b id="event-blocked">0</b> blocked</span>
+              <span><b id="event-growth">0</b> <span id="event-growth-label">growth alerts</span></span>
+            </div>
+            <div class="table-wrap" role="region" aria-label="Event log table" tabindex="0">
+              <table>
+                <caption>Local FROST Guard events, newest first</caption>
+                <thead><tr><th scope="col">Time</th><th scope="col">Origin</th><th scope="col">Event</th><th scope="col">Details</th></tr></thead>
+                <tbody id="event-rows"></tbody>
+              </table>
+              <p id="empty-events" class="empty">No events recorded.</p>
+            </div>
+            <p id="event-limit-note" class="note" hidden>Showing the 100 newest events. Export JSON to review the full local log.</p>
+          </section>
+        </div>
+
+        <aside>
+          <section class="card compact">
+            <p class="eyebrow">Coverage</p>
+            <h2>What is blocked</h2>
+            <ul class="plain-list">
+              <li>Origin Private File System entry points</li>
+              <li>Storage Bucket file-system entry points</li>
+              <li>Synchronous access handles in dedicated/shared workers</li>
+              <li>Alternate worker constructor paths</li>
+            </ul>
+          </section>
+
+          <section class="card compact caution">
+            <p class="eyebrow">Important limitation</p>
+            <h2>Defense in depth, not a browser patch</h2>
+            <p>An extension cannot rewrite an already-running service worker or eliminate every timing side channel. Use the popup’s purge control after installing on tabs that were already open, then reload them.</p>
+          </section>
+
+          <section class="card compact">
+            <p class="eyebrow">Data handling</p>
+            <h2>Local by design</h2>
+            <p>No analytics, remote code, network service, or runtime dependency is included. Settings sync through Chrome; event records remain in extension-local storage.</p>
+          </section>
+
+          <section class="card compact">
+            <p class="eyebrow">Provenance</p>
+            <details id="build-details">
+              <summary>How this extension is built</summary>
+              <div id="build-info" class="build-info" role="status">
+                <p>Reading the packaged manifest and package metadata…</p>
+              </div>
+            </details>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <dialog id="clear-events-dialog" aria-labelledby="clear-events-title">
+      <form method="dialog" class="dialog-card">
+        <h2 id="clear-events-title">Clear the local event log?</h2>
+        <p>This removes all saved FROST Guard event records from this browser profile. It does not change protection settings.</p>
+        <div class="dialog-actions">
+          <button type="submit" value="cancel" autofocus>Cancel</button>
+          <button type="submit" class="danger solid-danger" value="confirm">Clear event log</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="auto-purge-dialog" aria-labelledby="auto-purge-title">
+      <form method="dialog" class="dialog-card">
+        <h2 id="auto-purge-title">Enable automatic data deletion?</h2>
+        <p>A storage estimate can include legitimate offline activity. After a monitor-confirmed alert, FROST Guard will permanently delete that origin’s browser file system and service worker without asking again.</p>
+        <div class="dialog-actions">
+          <button type="submit" value="cancel" autofocus>Keep auto-purge off</button>
+          <button type="submit" class="danger solid-danger" value="confirm">Enable auto-purge</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script type="module" src="options.js"></script>
+  </body>
+</html>
