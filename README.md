@@ -13,6 +13,8 @@ unless the origin is temporarily or permanently allowed.
 > **Status:** defensive prototype, version 0.2.0, reviewed 2026-07-14. It is not
 > a substitute for a browser-engine fix or a formal security audit.
 
+*As of July 2026, I have yet to come across a website that leverages FROST.*
+
 ## Screenshots
 
 ### Site popup
