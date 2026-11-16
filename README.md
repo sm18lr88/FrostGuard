@@ -5,10 +5,10 @@ warns on browser file-system behavior used by **FROST (Fingerprinting Remotely
 using OPFS-based SSD Timing)**.
 
 The published FROST technique creates a large Origin Private File System (OPFS)
-file, performs timed random reads—typically through a worker—and classifies SSD
-contention produced by other websites or native applications. This extension
-uses a deliberately strict default: unprompted OPFS entry points are denied
-unless the origin is temporarily or permanently allowed.
+file, performs timed random reads (typically through a worker), and classifies
+SSD contention produced by other websites or native applications. This
+extension uses a deliberately strict default: it denies unprompted OPFS entry
+points unless the origin is temporarily or permanently allowed.
 
 > **Status:** defensive prototype, version 0.2.0, reviewed 2026-07-14. It is not
 > a substitute for a browser-engine fix or a formal security audit.
@@ -35,7 +35,7 @@ unless the origin is temporarily or permanently allowed.
 4. Select **Load unpacked** and choose the extracted `frostguard` directory.
 5. Reload tabs that were already open when the extension was installed.
 
-The extension targets Chrome 120+ and does not download code or contact a
+The extension targets Chrome 120+. It does not download code or contact a
 backend.
 
 ## What it does
@@ -43,33 +43,35 @@ backend.
 ### Thwarts the documented attack path
 
 At `document_start`, the extension injects a main-world shield into every
-protected HTTP(S) frame. It denies:
+protected HTTP(S) frame. The shield denies:
 
 - `navigator.storage.getDirectory()` / `StorageManager.getDirectory()`
 - `StorageBucket.getDirectory()`
 - `FileSystemFileHandle.createSyncAccessHandle()`
 - Future/experimental `FileSystemFileHandle.createAccessHandle()` when present
 
-It also wraps `Worker` and `SharedWorker` so the same denial is installed before
-the original worker script executes. The alternate
-`Worker.prototype.constructor` path is locked as well.
+The shield also wraps `Worker` and `SharedWorker`, so the same denial is in
+place before the original worker script runs. It locks the alternate
+`Worker.prototype.constructor` path as well.
 
 ### Detects and warns
 
-- A closed-shadow-root warning banner appears in the affected top-level page.
-- The toolbar icon receives a warning badge.
+- A warning banner in a closed shadow root appears in the affected top-level
+  page.
+- The toolbar icon gets a warning badge.
 - Optional low-priority desktop notifications are reserved for monitor-confirmed
-  storage growth and rate-limited per origin.
-- A top-frame isolated monitor samples `navigator.storage.estimate()` and uses
-  an offline-calibrated deterministic classifier to confirm sustained rapid
-  file-system growth. Fallback total-storage signals remain log-only.
-- A local event log can be reviewed or exported as JSON.
+  storage growth, and they are rate-limited per origin.
+- A top-frame isolated monitor samples `navigator.storage.estimate()`. An
+  offline-calibrated deterministic classifier uses the samples to confirm
+  sustained rapid file-system growth. Fallback total-storage signals remain
+  log-only.
+- You can review the local event log or export it as JSON.
 
 ### Contains and recovers
 
 The popup supports one-hour and permanent exceptions. It can also delete the
 current origin's browser file-system data and service worker, then reload the
-tab. Storage-growth alerts never trigger automatic deletion; cleanup remains an
+tab. Storage-growth alerts never trigger automatic deletion. Cleanup stays an
 explicit user action.
 
 ## Expected compatibility impact
@@ -81,17 +83,17 @@ reload because the shield locks API descriptors for the life of the document.
 
 Worker wrapping preserves module-worker resolution and common classic-worker
 relative `importScripts()` behavior. A classic worker that depends on its own
-`location.href` being the original network URL may need an exception because
+`location.href` being the original network URL may need an exception, because
 its initial bootstrap URL is a short-lived `blob:` URL.
 
 ## Important limitations
 
 A Chrome extension cannot rewrite an already-running website service worker,
 reliably eliminate every newly created realm race, or remove every possible
-browser timing side channel. An attacker could also pursue a different storage
-API or a future browser API. FROST Guard materially blocks the documented OPFS
-and synchronous-worker path, but it cannot prove that all variants are
-impossible.
+browser timing side channel. An attacker could also pursue a different
+storage API or a future browser API. FROST Guard materially blocks the
+documented OPFS and synchronous-worker path, but it cannot prove that all
+variants are impossible.
 
 For tabs open before installation, use **Purge OPFS + service worker** on any
 suspicious origin and reload. See [`docs/THREAT_MODEL.md`](docs/THREAT_MODEL.md)
@@ -111,16 +113,16 @@ for the full boundary.
 ## Dependency and maintenance policy
 
 There are **zero runtime dependencies and zero development dependencies**. The
-extension uses browser-native APIs and Node's built-in test runner, avoiding a
-bundler and dependency supply-chain churn. `package.json` requires Node 24+ for
-local validation. Manifest and maintenance metadata are explicitly dated
-2026-07-14.
+extension uses browser-native APIs and Node's built-in test runner, so it needs
+no bundler and avoids dependency supply-chain churn. `package.json` requires
+Node 24+ for local validation. Manifest and maintenance metadata are explicitly
+dated 2026-07-14.
 
-The options page includes a collapsed **How this extension is built** disclosure.
-It reads the packaged `manifest.json` and `package.json` directly to show the
+The options page has a collapsed **How this extension is built** disclosure. It
+reads the packaged `manifest.json` and `package.json` directly and shows the
 version, platform target, implementation, Node requirement, exact npm package
-count, reproducible check commands, and research/platform references. This view
-is generated locally with ordinary JavaScript; it uses no AI or network service.
+count, reproducible check commands, and research/platform references. Ordinary
+JavaScript generates this view locally; it uses no AI or network service.
 
 Run checks:
 
@@ -151,8 +153,9 @@ npm run smoke:browser
 ```
 
 The harness auto-detects Playwright Chromium on Windows. Chrome Stable 137+
-does not accept command-line loading of unpacked extensions; set `CHROME_BIN`
-to Chromium or Chrome for Testing when auto-detection is unavailable.
+does not accept command-line loading of unpacked extensions. When
+auto-detection is unavailable, set `CHROME_BIN` to Chromium or Chrome for
+Testing.
 
 The smoke test reports a skip when an enterprise `URLBlocklist` prevents all
 HTTP(S) navigation in the test browser.
